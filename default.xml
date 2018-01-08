@@ -8,6 +8,8 @@
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+  
+  <remote  name="github" fetch="http://github.com/" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -557,5 +559,7 @@
 
   <!-- OmniROM -->
   <include name="omni-default.xml" />
+  
+  <project path="device/xiaomi/cappu" name="goayandi/android_twrp_xiaomi_cappu" remote="github" revision="android-6.0" />
 
 </manifest>
